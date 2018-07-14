@@ -1,0 +1,39 @@
+﻿<Page x:Class="EasyHousingSolutions.PostPropertySubmit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasyHousingSolutions"
+      mc:Ignorable="d"
+      Title="PostPropertySubmit" Height="464.894" Width="306.383">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid>
+
+            <RadioButton x:Name="rdbSale" Content="Sale" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="32,54,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rdbRent" Content="Rent" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="105,54,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblDetails" Content="Property Details....." FontWeight="Black" FontSize="18" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Width="187"/>
+            <Label x:Name="lblType" Content="Property Type :" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="32,88,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rdbFlat" Content="Flat"  FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="31,122,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rdbHouse" Content="House"  FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="95,122,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rdbOffice" Content="Office"  FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="174,122,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblLocation" Content="Location :"  FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="23,160,0,0" VerticalAlignment="Top" Width="84"/>
+            <ComboBox x:Name="cmbLocation" HorizontalAlignment="Left" Margin="144,167,0,0" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem>Chennai</ComboBoxItem>
+                <ComboBoxItem>Hyderabad</ComboBoxItem>
+                <ComboBoxItem>Pune</ComboBoxItem>
+            </ComboBox>
+            <Label x:Name="lblRooms" Content="Bed Rooms :" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="23,205,0,0" VerticalAlignment="Top"/>
+            <ComboBox x:Name="cmbRooms" HorizontalAlignment="Left" Margin="144,205,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="lblFurnish" Content="Furnished State :" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="19,242,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="144,249,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="lblAddress" Content="Address :" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="32,285,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="29" Margin="144,285,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="lblImage" Content="Image Upload :" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="32,319,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblPrice" Content="Price Range :" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Margin="32,369,0,0" VerticalAlignment="Top"/>
+            <ComboBox x:Name="cmbMin" HorizontalAlignment="Left" Margin="139,369,0,0" VerticalAlignment="Top" Width="42"/>
+            <ComboBox x:Name="cmbMax" HorizontalAlignment="Left" Margin="206,369,0,0" VerticalAlignment="Top" Width="44"/>
+            <Button x:Name="btnSubmit" Content="Submit Details" HorizontalAlignment="Left" Margin="105,416,0,0" VerticalAlignment="Top" Width="101"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

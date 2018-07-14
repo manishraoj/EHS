@@ -1,0 +1,61 @@
+﻿<Page x:Class="EasyHousingSolutions.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasyHousingSolutions"
+      
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Main" >
+    <!--<Page.Background>
+        <ImageBrush ImageSource="D:\Project\EasyHousingSolutions\house.jpeg"></ImageBrush>
+    </Page.Background>-->
+    <Grid Background="SeaShell" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="52*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="75*"/>
+
+
+        </Grid.ColumnDefinitions>
+
+
+
+
+        <Label x:Name="label" Content="Easy Housing Solutions" Background="BurlyWood" VerticalAlignment="Top" Height="36"  FontFamily="Times New Roman"  FontSize="25" FontStyle="Oblique"  FontWeight="Bold" HorizontalContentAlignment="Center" Grid.ColumnSpan="6" Grid.RowSpan="2"  />
+
+
+
+        <Menu  x:Name="menu" Background="BurlyWood" HorizontalAlignment="Left" Grid.Column="0" Height="26"  VerticalAlignment="Center" Width="49"   Grid.Row="1" >
+            <MenuItem Header="_Menu" Height="26" Width="49"  >
+                <MenuItem Header="_Search" Background="Lavender">
+                    <MenuItem  Header="Property For Buy" Background="Lavender" />
+                    <MenuItem Header="Property For Sale" Background="Lavender"/>
+                </MenuItem>
+                <MenuItem Header="_Sell/Rent"  Background="Lavender">
+                    <MenuItem Header="Post Property" Background="Lavender" Click="Post_Click" />
+                </MenuItem>
+                <MenuItem Header="Login" Click="Login_Click"  Background="Lavender"/>
+                <MenuItem Header="_Help And Support"  Background="Lavender">
+                    <MenuItem Header="Settings"  Background="Lavender"  />
+
+                    <MenuItem Header="Help"  Background="Lavender"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        
+    </Grid>
+</Page>

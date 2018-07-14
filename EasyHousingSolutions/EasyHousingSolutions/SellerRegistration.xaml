@@ -1,0 +1,74 @@
+﻿<Page x:Class="EasyHousingSolutions.SellerRegistration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasyHousingSolutions"
+      mc:Ignorable="d"
+      Title="SellerRegistration" Background="Lavender">
+
+    <Grid Background="Lavender" Width="739" >
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+
+
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="labelText" Grid.Row="0" Grid.ColumnSpan="2" Content="Easy Housing Solutions"   FontFamily="Times New Roman"  FontSize="25" FontStyle="Oblique" FontWeight="Bold" HorizontalContentAlignment="Center"  Grid.RowSpan="1" Height="39" VerticalAlignment="Top"/>
+        <Label x:Name="lblHead" HorizontalAlignment="Center" Content="Enter Seller Details..." Grid.Row="1" Margin="311,0,312,0" Width="116" Grid.ColumnSpan="2" Height="30" VerticalAlignment="Top"/>
+        <Label x:Name="lblUserName" HorizontalAlignment="Left" Content="User Name :" Grid.Row="10" Grid.Column="0" Margin="264,2,0,0" Height="26" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lblFirstName"  HorizontalAlignment="Left" Content="First Name :"  Grid.Row="2"   Grid.Column="0" Margin="264,3,0,0" Height="26" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="lblLastName"  HorizontalAlignment="Left" Content="Last Name :"  Grid.Row="3"  Grid.Column="0" Margin="264,4,0,0" Height="26" VerticalAlignment="Top" Width="72"/>
+        <Label x:Name="lblDOB" HorizontalAlignment="Left" Content="Date Of Birth :" Grid.Row="4" Grid.Column="0" Margin="264,3,0,0" Height="28" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="lblPhoneNo" HorizontalAlignment="Left" Content="Phone Number:"  Grid.Row="5" Grid.Column="0" Margin="264,4,0,0" Height="26" VerticalAlignment="Top" Width="93" />
+        <Label x:Name="lblAddress" HorizontalAlignment="Left" Content="Address :" Grid.Row="7"  Grid.Column="0" Margin="264,2,0,0" Height="26" VerticalAlignment="Top" Width="58"/>
+        <Label x:Name="lblEmail" HorizontalAlignment="Left" Content="Email ID :"  Grid.Row="6"  Grid.Column="0" Margin="264,2,0,0" Height="26" VerticalAlignment="Top" Width="59"/>
+        <Label Name="lblCity"  Grid.Column="0" Content="City :" HorizontalAlignment="Left"  Margin="264,5,0,0" Grid.Row="9" VerticalAlignment="Top" Height="26" Width="36"/>
+        <Label Name="lblState" Grid.Column="0" Content="State :" HorizontalAlignment="Left" Margin="264,5,0,0" Grid.Row="8" VerticalAlignment="Top" Height="26" Width="42"/>
+        <Label Name="lblPass" Grid.Column="0" Content="Password :" HorizontalAlignment="Left" Margin="264,3,0,0"  Grid.Row="11" VerticalAlignment="Top" Height="26" Width="65"/>
+
+
+
+
+
+        <TextBox x:Name="txtUserName" Grid.Column="1"  Grid.Row="10" TextWrapping="Wrap" Margin="48.5,2,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94"  />
+        <TextBox x:Name="txtFirstName" Grid.Column="1"  Grid.Row="2" Margin="48.5,3,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94"/>
+        <TextBox x:Name="txtLastName" Grid.Column="1" Grid.Row="3" Margin="48.5,4,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94" />
+        <TextBox x:Name="txtPhoneNo" Grid.Column="1"  Grid.Row="5"   Margin="48.5,5,0,0" Height="23"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="94"/>
+        <DatePicker Name="txtDOB" Grid.Column="1" Grid.Row="4" Margin="48,4,0,0" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94"/>
+        <TextBox x:Name="txtAddress" Grid.Column="1"  Grid.Row="7" Margin="48.5,5,0,0" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94" />
+        <TextBox x:Name="txtEmail" Grid.Column="1" Grid.Row="6"  Margin="48.5,3,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94"/>
+
+        <TextBox Name="txtPass" Grid.Column="1"   Margin="48.5,3,0,0" Grid.Row="11" TextWrapping="Wrap" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94" />
+        <ComboBox Name="cmbState" Grid.Column="1"  Margin="48.5,5,0,0" Grid.Row="8" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94" SelectionChanged="cmbState_SelectionChanged"/>
+        <ComboBox Name="cmbCity" Grid.Column="1" Margin="48.5,5,0,0" Grid.Row="9"  VerticalAlignment="Top" Height="23" HorizontalAlignment="Left" Width="94"/>
+
+
+        <Button x:Name="btnSave" Margin="332,0,333,0" Content="Save Details" HorizontalAlignment="Center"  Grid.Row="12" Click="btnSave_Click" Height="20" VerticalAlignment="Bottom" Width="74" Grid.ColumnSpan="2" />
+
+
+    </Grid>
+</Page>
